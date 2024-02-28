@@ -1,11 +1,19 @@
-/* The biggest secret to flexbox is managing parents & children. */
-/* To manage this we use flex containers (the parent) & flex items (the child). */
-/* So the first job is to identify where are the parents & where are the children. */
-/* So there are 4 articles, and i'd like them to show up in one big row. To do this we need to wrap a container around them */
+/* There are three properties that you'll ever only need to set up flex box */
+/* display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; */
+/* These 3 properties are alway set on the parent */
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
 body {
     font-family: Arial, sans-serif;
-  }
-  a {
+}
+
+a {
     display: inline-block;
     background-color: royalblue;
     color: white;
@@ -13,23 +21,29 @@ body {
     text-decoration: none;
     border-radius: 10px;
     font-weight: bold;
-  }
-  a:hover {
+}
+
+a:hover {
     color: #333;
     background-color: powderblue;
-  }
-  .fas {
+}
+
+.fas {
     font-size: 3rem;
-  }
-  .fa-apple-alt {
+}
+
+.fa-apple-alt {
     color: tomato;
-  }
-  .fa-lemon {
+}
+
+.fa-lemon {
     color: gold;
-  }
-  .fa-pepper-hot {
+}
+
+.fa-pepper-hot {
     color: darkgreen;
-  }
-  .fa-carrot {
+}
+
+.fa-carrot {
     color: darkorange;
-  }
+}
