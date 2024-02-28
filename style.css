@@ -1,3 +1,7 @@
+/* The biggest secret to flexbox is managing parents & children. */
+/* To manage this we use flex containers (the parent) & flex items (the child). */
+/* So the first job is to identify where are the parents & where are the children. */
+/* So there are 4 articles, and i'd like them to show up in one big row. To do this we need to wrap a container around them */
 body {
     font-family: Arial, sans-serif;
   }
