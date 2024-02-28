@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  a {
+    display: inline-block;
+    background-color: royalblue;
+    color: white;
+    padding: 0.5rem;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+  }
+  a:hover {
+    color: #333;
+    background-color: powderblue;
+  }
+  .fas {
+    font-size: 3rem;
+  }
+  .fa-apple-alt {
+    color: tomato;
+  }
+  .fa-lemon {
+    color: gold;
+  }
+  .fa-pepper-hot {
+    color: darkgreen;
+  }
+  .fa-carrot {
+    color: darkorange;
+  }
