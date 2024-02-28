@@ -23,6 +23,26 @@ article{
     flex-basis: 100%;
 }
 
+@media(min-width: 376px) {
+    article {
+        flex-basis: 50%;
+    }
+}
+
+/* Tablet size */
+@media(min-width: 576px) {
+    article {
+        flex-basis: 50%;
+    }
+}
+
+/* Desktop size */
+@media(min-width: 992px) {
+    article {
+        flex-basis: 25%;
+    }
+}
+
 body {
     font-family: Arial, sans-serif;
 }
