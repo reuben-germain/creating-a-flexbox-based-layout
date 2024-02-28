@@ -1,7 +1,13 @@
+/* box-sizing: border-box should be used in all css layout stylesheets, like forever */
+/* Thes two properties solve a lot of layout problems */
+/* To make the border box work you have to initialise the * and pseudo elements before & after to inherit */
 html {
     box-sizing: border-box;
 }
 
+*, *::before, *::after {
+    box-sizing: inherit;
+}
 .row {
     display: flex;
     flex-flow: row wrap;
