@@ -1,42 +1,31 @@
-/* box-sizing: border-box should be used in all css layout stylesheets, like forever */
-/* Thes two properties solve a lot of layout problems */
-/* To make the border box work you have to initialise the * and pseudo elements before & after to inherit */
 html {
     box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
+
 .row {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 }
 
-/* To make this responsive, we'll take a mobile first approach. */
-/* Here, this means setting my article's flex-basis to 100% */
-/* Then start setting up the media queries accordingly. */
-article{
+article {
     border: 1px solid tomato;
     padding: 1rem;
     flex-basis: 100%;
 }
 
-@media(min-width: 376px) {
-    article {
-        flex-basis: 50%;
-    }
-}
-
-/* Tablet size */
 @media(min-width: 576px) {
     article {
         flex-basis: 50%;
     }
 }
 
-/* Desktop size */
 @media(min-width: 992px) {
     article {
         flex-basis: 25%;
