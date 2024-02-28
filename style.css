@@ -1,8 +1,7 @@
-/* There are three properties that you'll ever only need to set up flex box */
-/* display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between; */
-/* These 3 properties are alway set on the parent */
+html {
+    box-sizing: border-box;
+}
+
 .row {
     display: flex;
     flex-flow: row wrap;
