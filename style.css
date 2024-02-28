@@ -14,11 +14,13 @@ html {
     justify-content: space-between;
 }
 
+/* To make this responsive, we'll take a mobile first approach. */
+/* Here, this means setting my article's flex-basis to 100% */
+/* Then start setting up the media queries accordingly. */
 article{
     border: 1px solid tomato;
     padding: 1rem;
-    flex-basis: 25%;
-    /* flex: 0 0 20%; - this is shorthand for the flex basis */
+    flex-basis: 100%;
 }
 
 body {
